@@ -1,5 +1,8 @@
+use crate::application::Application;
+
 mod application;
 
 fn main() {
-    println!("Hello, world!");
+    let mut cli = Application::new();
+    cli.run();
 }
