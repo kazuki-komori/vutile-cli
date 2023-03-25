@@ -1,0 +1,10 @@
+services:
+  vutile-cli:
+    container_name: vutile-cli
+    image: rust:1.68
+    tty: true
+    volumes:
+      - .:/vutile-cli
+    working_dir: /vutile-cli
+    environment:
+      - USER=user
